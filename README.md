@@ -10,7 +10,7 @@
   * Velocidad Base: 1.8 GHz
   * Velocidad Máxima: 2.9 GHz
   * Numero de núcleos: 2
-  * Humero de hilos: 
+  * Humero de hilos: 2
   * Arquitectura: 
   * Set de instrucciones: 
 * Tamaño de las cachés del procesador
