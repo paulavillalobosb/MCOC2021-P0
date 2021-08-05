@@ -2,54 +2,41 @@
 
 # Mi computador principal
 
-* Marca/modelo: System 76 Serval WS
+* Marca/modelo: MacBook Air (13-inch, 2017)
 * Tipo: Notebook
-* Año adquisición: 2015
+* Año adquisición: 2018
 * Procesador:
-  * Marca/Modelo: Intel Core i7-4790K
-  * Velocidad Base: 4.00 GHz
-  * Velocidad Máxima: 4.40 GHz
-  * Numero de núcleos: 4 
-  * Humero de hilos: 2
-  * Arquitectura: x86_64
-  * Set de instrucciones: Intel SSE4.1, Intel SSE4.2, Intel AVX2
+  * Marca/Modelo: Intel Core i5
+  * Velocidad Base: 1.8 GHz
+  * Velocidad Máxima: 2.9 GHz
+  * Numero de núcleos: 2
+  * Humero de hilos: 
+  * Arquitectura: 
+  * Set de instrucciones: 
 * Tamaño de las cachés del procesador
-  * L1d: 32KB
-  * L1i: 32KB
   * L2: 256KB
-  * L3: 8192KB
+  * L3: 3000KB
 * Memoria 
-  * Total: 32 GB
+  * Total: 8 GB
   * Tipo memoria: DDR3
-  * Velocidad 1867 MHz
-  * Numero de (SO)DIMM: 4
+  * Velocidad 1600 MHz
+  * Numero de (SO)DIMM: 
 * Tarjeta Gráfica
-  * Marca / Modelo: Nvidia GeForce GTX 980M
-  * Memoria dedicada: 8192 MB
-  * Resolución: 1920 x 1080
+  * Marca / Modelo: Intel HD Graphics 6000
+  * Memoria dedicada: 1536 MB
+  * Resolución: 1440x900
 * Disco 1: 
-  * Marca: Samsung
+  * Marca: APPLE SSD SM0128G
   * Tipo: SSD
-  * Tamaño: 1TB
-  * Particiones: 4
-  * Sistema de archivos: EXT4, swap
-* Disco 2: 
-  * Marca: Samsung
-  * Tipo: SSD
-  * Tamaño: 1TB
+  * Tamaño: 128 GB
   * Particiones: 1
-  * Sistema de archivos: EXT4
-* Disco 3: 
-  * Marca: Samsung
-  * Tipo: SSD
-  * Tamaño: 1TB
-  * Particiones: 1
-  * Sistema de archivos: EXT4
+  * Sistema de archivos: APFS
+
   
-* Dirección MAC de la tarjeta wifi: 5C:E0:C5:D7:EE:48 
-* Dirección IP (Interna, del router): 192.168.0.129
-* Dirección IP (Externa, del ISP): 190.45.122.34
-* Proveedor internet: VTR Banda Ancha S.A.
+* Dirección MAC de la tarjeta wifi: 64:c7:53:e2:85:ae
+* Dirección IP (Interna, del router): 192.168.1.254
+* Dirección IP (Externa, del ISP): 192.168.1.10
+* Proveedor internet: Gtd
 
 
 
