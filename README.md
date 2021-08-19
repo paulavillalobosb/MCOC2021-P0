@@ -69,4 +69,33 @@ La linealidad observada en el gráfico de memoria puede ser debido a que el grá
 ![Gráficos](https://user-images.githubusercontent.com/88356859/128528301-15768a11-fbf6-4192-8d4d-9181f28919a8.png)
 
 
+# Desempeño INV
+
+1. ¿Qué algoritmo de inversión cree que utiliza cada método (ver wiki)? Justifique claramente su respuesta. 
+
+2. ¿Como incide el paralelismo y la estructura de caché de su procesador en el desempeño en cada caso? Justifique su comentario en base al uso de procesadores y memoria observado durante las corridas.
+
+* Gráficos de rendimiento - Numpy
+
+![numpy_single](https://user-images.githubusercontent.com/88356859/129998455-f1e0a20c-fc32-4fa6-b05d-9b772d2b8b55.png)
+![numpy_double](https://user-images.githubusercontent.com/88356859/129998450-167f66a8-1428-4063-9257-411f9004d291.png)
+
+   --> En los casos de _half y longdouble_ no fue posible correr el código.
+
+
+* Graficos de rendimeinto - Scipy/overwrite_a = True
+
+![scipytrue_half](https://user-images.githubusercontent.com/88356859/129998602-32e743de-147a-4a83-818c-a5285de40f7a.png)
+![scipytrue_single](https://user-images.githubusercontent.com/88356859/129998608-0f72268c-6d2b-4da0-86ad-75cc071cc8d7.png)
+![scipytrue_longdouble](https://user-images.githubusercontent.com/88356859/129998604-02b87097-cfec-4694-bc7f-d1d9bbe46d09.png)
+![scipytrue_doublepng](https://user-images.githubusercontent.com/88356859/129998594-2d994f0f-b03a-4a5e-8da5-08b667b8d685.png)
+
+
+* Graficos de rendimeinto - Scipy/overwrite_a = False
+
+![scipyfalse_half](https://user-images.githubusercontent.com/88356859/129998707-28481f4e-96ba-4833-8aba-8245a10cf2c2.png)
+![scipyfalse_single](https://user-images.githubusercontent.com/88356859/129998714-95a1fb4a-0436-4ca3-8ebe-2477fed49b69.png)
+![scipyfalse_double](https://user-images.githubusercontent.com/88356859/129998723-7db8003e-6c4d-4a99-8fc8-b27f81dd3235.png)
+![scipyfalse_longdouble](https://user-images.githubusercontent.com/88356859/129998731-2dc78ce8-a31c-4f4b-9f5d-d9e1bcf155ac.png)
+
 
