@@ -71,10 +71,6 @@ La linealidad observada en el gráfico de memoria puede ser debido a que el grá
 
 # Desempeño INV
 
-1. ¿Qué algoritmo de inversión cree que utiliza cada método (ver wiki)? Justifique claramente su respuesta. 
-
-2. ¿Como incide el paralelismo y la estructura de caché de su procesador en el desempeño en cada caso? Justifique su comentario en base al uso de procesadores y memoria observado durante las corridas.
-
 * Gráficos de rendimiento - Numpy
 
 ![numpy_single](https://user-images.githubusercontent.com/88356859/129998455-f1e0a20c-fc32-4fa6-b05d-9b772d2b8b55.png)
