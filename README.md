@@ -94,4 +94,13 @@ La linealidad observada en el gráfico de memoria puede ser debido a que el grá
 ![scipyfalse_double](https://user-images.githubusercontent.com/88356859/129998723-7db8003e-6c4d-4a99-8fc8-b27f81dd3235.png)
 ![scipyfalse_longdouble](https://user-images.githubusercontent.com/88356859/129998731-2dc78ce8-a31c-4f4b-9f5d-d9e1bcf155ac.png)
 
+# Desempeño SOLVE y EIGH
+
+![solv](https://user-images.githubusercontent.com/88356859/130304067-5b29b494-b145-4f6d-bf7b-750f96fc1703.png)
+
+
+![eigh single](https://user-images.githubusercontent.com/88356859/130304052-3594fa9c-8632-47ca-bc11-af4324032f7d.png)
+![eigh double](https://user-images.githubusercontent.com/88356859/130304049-c4be5510-fdbf-4469-99a3-ccb43f88f6c5.png)
+
+
 
