@@ -96,7 +96,7 @@ La linealidad observada en el gráfico de memoria puede ser debido a que el grá
 
 # Desempeño SOLVE y EIGH
 
-![solv](https://user-images.githubusercontent.com/88356859/130304067-5b29b494-b145-4f6d-bf7b-750f96fc1703.png)
+![solve](https://user-images.githubusercontent.com/88356859/130304195-a61bb731-f977-4385-939f-f434f787d404.png)
 
 
 ![eigh single](https://user-images.githubusercontent.com/88356859/130304052-3594fa9c-8632-47ca-bc11-af4324032f7d.png)
