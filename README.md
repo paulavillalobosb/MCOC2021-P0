@@ -98,9 +98,12 @@ La linealidad observada en el gráfico de memoria puede ser debido a que el grá
 
 ![solve](https://user-images.githubusercontent.com/88356859/130304195-a61bb731-f977-4385-939f-f434f787d404.png)
 
+En el grafico de desempeño del algoritmo SOLVE se puede observar que al asumir la matriz definida positiva (curva color verdeoscuro) el tiempo transcurrido es menor que en el resto de los casos (se puede observar claramente despues de N = 20). Por otro lado, se puede notar que al invertir la matriz y multiplicarla por el vector b el tiempo transcurrido es mayor que para el resto de los casos desde N = 20 aproximadamente tambien se observa que para matrices de N muy pequeños es el caso con el menor tiempo transcurrido. Tambien se puede observar que asmiendo que la matriz es simétrica entre N 20 y 50 tiene un pick de tiempo considerablemnte mayor al resto de los casos. 
+
+
 
 ![eigh single](https://user-images.githubusercontent.com/88356859/130304052-3594fa9c-8632-47ca-bc11-af4324032f7d.png)
 ![eigh double](https://user-images.githubusercontent.com/88356859/130304049-c4be5510-fdbf-4469-99a3-ccb43f88f6c5.png)
 
-
+Luego, en los graficos de desempeño de la funcion EIGH no se observan mayores diferencias entre los tipos de datos single y double. Se puede observar en ambos graficos que los casos "driver = ev" y "driver = evx" con "overwrite_a = True / False" tienen un tiempo transcurrido mayor al resto de los casos. 
 
