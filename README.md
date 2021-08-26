@@ -107,3 +107,26 @@ En el grafico de desempeño del algoritmo SOLVE se puede observar que al asumir 
 
 Luego, en los graficos de desempeño de la funcion EIGH no se observan mayores diferencias entre los tipos de datos single y double. Se puede observar en ambos graficos que los casos "driver = ev" y "driver = evx" con "overwrite_a = True / False" tienen un tiempo transcurrido mayor al resto de los casos. 
 
+
+# Matrices dispersas y complejidad computacional
+
+En esta entrega se analizó el tiempo de ensamblaje, solución MATMUL y la complejidad computacional para matrices llenas y dispersas. 
+
+* Matrices Llenas
+
+En primer lugar, se graficó el tiempo de ensamblaje y solución de multiplicacion de dos matrices llenas de tamaño N entre 1 y 10.000. Para este caso se utilizaron dos matrices laplacianas creadas a partir de la siguiente función:
+
+```python
+def matriz_laplaciana(N, t):
+ return np.eye(N, dtype =t) - np.eye(N,N,1,dtype=t)
+ ```
+
+En este caso se desarrolló una función en donde se pide el tamaño de la matriz deseada y el tipo de dato a utilizar (en este caso _double/float64_) y utilizando la función _eye_ de la libreria _numpy_ retorna una matriz laplaciana.
+
+![llena](https://user-images.githubusercontent.com/88356859/131050147-55cac61b-cde8-4a66-9700-f7a2dbe23a3d.png)
+
+En este grafico se puede observar que el tiempo de ensamblaje sigue un comportamiento de complejidad matricial de orden 2 _O(H^2)_ y el tiempo de solución un comportamiento de complejidad matricial de orden 3 _O(H^3)_.
+
+* Matrices Dispersas
+
+....
