@@ -114,19 +114,36 @@ En esta entrega se analizó el tiempo de ensamblaje, solución MATMUL y la compl
 
 * Matrices Llenas
 
-En primer lugar, se graficó el tiempo de ensamblaje y solución de multiplicacion de dos matrices llenas de tamaño N entre 1 y 10.000. Para este caso se utilizaron dos matrices laplacianas creadas a partir de la siguiente función:
+En primer lugar, se graficó el tiempo de ensamblaje y solución de multiplicacion de dos matrices llenas de tamaños N entre 1 y 10.000. Para este caso se utilizaron dos matrices laplacianas creadas a partir de la siguiente función:
 
 ```python
 def matriz_laplaciana(N, t):
  return np.eye(N, dtype =t) - np.eye(N,N,1,dtype=t)
  ```
 
-En este caso se desarrolló una función en donde se pide el tamaño de la matriz deseada y el tipo de dato a utilizar (en este caso _double/float64_) y utilizando la función _eye_ de la libreria _numpy_ retorna una matriz laplaciana.
+En este caso se desarrolló una función en donde se pide el tamaño de la matriz deseada y el tipo de dato a utilizar (en este caso _double/float64_) y utilizando la función _eye_ de la libreria _numpy_ retorna una matriz laplaciana. Con esta función se desarrollaron y luego multiplicaron dos matrices, midiendo los tiempos transcurridos, generando el siguiente gráfico:
 
 ![llena](https://user-images.githubusercontent.com/88356859/131050147-55cac61b-cde8-4a66-9700-f7a2dbe23a3d.png)
 
 En este grafico se puede observar que el tiempo de ensamblaje sigue un comportamiento de complejidad matricial de orden 2 _O(H^2)_ y el tiempo de solución un comportamiento de complejidad matricial de orden 3 _O(H^3)_.
 
+
 * Matrices Dispersas
 
-....
+Por otro lado, se graficó el tiempo de ensamblaje y solución de multiplicacion de dos matrices dispersas de tamaños N entre 1 y 20.000.000. 
+
+Para este caso se utilizaron dos matrices laplacianas creadas a partir de la siguiente función:
+
+```python
+def matriz_laplaciana(N, t):
+	return sparse.eye(N, dtype =t) - sparse.eye(N,N,1,dtype=t)
+```
+
+En este caso, se utilizó la libreria scipy.sparse para crear las matrices requeridas, de esta manera se optimizó el tiempo de ensamblaje. 
+
+Luego, se definieron como matrices de filas dispersas comprimidas _csr.matrix()_ en donde fila a fila se almacenan los datos distintos de cero, para lograr optimizar el tiempo de solución. Finalmente se multiplicaron las matrices y se graficaron los tiempos transcurridos:
+
+![dispersa 20 mill (max)](https://user-images.githubusercontent.com/88356859/131051187-98121a55-ec48-4890-8572-0d1e43923cd9.png)
+
+En este grafico se puede observar que utilizando la libreria scipy.sparse y matrices dispersas se logro disminuir considerablemnte los tiempos de desarrollo, llegando a utilizar matrices de tamaño del orden de 20.000.000. Es posible notar que los tiempos en un inicio se comportan de manera constante hasta las matrices de tamaño N=10.000 aproximadamente, y luego siguen un comportamiento de orden 1 _O(H^1)_.
+
