@@ -164,6 +164,12 @@ Finalmente, es evidente notar que las matrices dispersas optimizaron de manera c
 ![inv dispersa](https://user-images.githubusercontent.com/88356859/132078946-e614ee9d-20c5-4f23-bad3-32f6cb2445fd.png)
 ![inv llena](https://user-images.githubusercontent.com/88356859/132078951-66f92210-03d1-4945-b7ad-6ad494b46058.png)
 
+
+
+
+
+
+
 * Codigo de ensamblaje Matriz Laplaciana
 
 ```python
