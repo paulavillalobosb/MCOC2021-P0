@@ -172,14 +172,9 @@ def laplaciana(N, t):
 	return 2*sp.eye(N, dtype =t) - d - d.T
 ```
 
+En ambos algoritmos no se observan mayores diferencias entre el uso de matrices llenas o dispersas. En primer lugar, para el caso de SOLVE con ambos tipos de matrices se observan tiempos de ensamblaje y solucion muy parecidos, siguiendo un comportamiento de orden O(N^1). Luego, para INV, en el tiempo de ensamblaje de matrices llenas y dispersas se puede observar un comportamiento constante por otro lado, en el tiempo de solucion se observa un comportaminto con un grado mayor de compleijidad, llegando a un nivel de orden O(N^3).
 
-
-1. Diferencia en el comportamiento de los algoritmos en el caso de matrices llenas y dispersas.
-2. ¿Cuál parece la complejidad asintotica para el ensamblado y solución en ambos casos?
-3. ¿Como afecta el tamaño de las matrices al comportamiento aparente?
-4. ¿Que tan estables son las corridas?
-
-
+No se obserban grandes diferencias entre corridas. En algunos puntos se notas pequeñas difencias de tiempo, pero por lo general tienen un comportamiento bastante parecido entre si. Esto para el caso de los algoritmos SOLVE e INV. 
 
 
 
