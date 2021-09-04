@@ -150,3 +150,36 @@ En este grafico se puede observar que utilizando la libreria scipy.sparse y matr
 
 Finalmente, es evidente notar que las matrices dispersas optimizaron de manera considerable su tiempo de ensamblaje y solución, esto se puede observar al comparar en ambos gráficos los tiempos para matrices entre N=1 y N=10.000, en donde en el primer caso, se siguen comportamientos de ordenes entre 2 y 3 llegando a superar los 10 segundos de ejecusión; mientras que en el segundo caso, se mantiene constante en un intervalo de tiempo entre 0.1 y 10 milisegundos, además se pudo seguir aumentando exponencialmente el tamaño de las matrices, cosa que no fue posible para el caso de matrices llenas. 
 
+
+# Matrices dispersas y complejidad computacional Parte 2
+
+* Complejidad algoritmica de SOLVE
+
+![solve dispersa](https://user-images.githubusercontent.com/88356859/132078999-06891716-1028-426b-b2a6-f37ddddac4fa.png)
+![solve llena](https://user-images.githubusercontent.com/88356859/132079000-e8957de0-e62c-445c-9376-15120f6ff5f4.png)
+
+
+* Complejidad algoritmica de INV
+
+![inv dispersa](https://user-images.githubusercontent.com/88356859/132078946-e614ee9d-20c5-4f23-bad3-32f6cb2445fd.png)
+![inv llena](https://user-images.githubusercontent.com/88356859/132078951-66f92210-03d1-4945-b7ad-6ad494b46058.png)
+
+* Codigo de ensamblaje Matriz Laplaciana
+
+```python
+def laplaciana(N, t):
+	d = sp.eye(N,N,1,dtype=t)
+	return 2*sp.eye(N, dtype =t) - d - d.T
+```
+
+
+
+1. Diferencia en el comportamiento de los algoritmos en el caso de matrices llenas y dispersas.
+2. ¿Cuál parece la complejidad asintotica para el ensamblado y solución en ambos casos?
+3. ¿Como afecta el tamaño de las matrices al comportamiento aparente?
+4. ¿Que tan estables son las corridas?
+
+
+
+
+
